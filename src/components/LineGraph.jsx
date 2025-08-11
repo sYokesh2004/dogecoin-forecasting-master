@@ -16,7 +16,8 @@ import LineGraphTable from "./LineGraphTable";
 
 const fetch30DayData = async () => {
   try {
-    const response = await fetch("ministerial-anstice-rockersclub-a46ddcf6.koyeb.app/dogecoin/forecast");
+    // Use the correct API endpoint with "https://"
+    const response = await fetch("https://ministerial-anstice-rockersclub-a46ddcf6.koyeb.app/dogecoin/forecast");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
